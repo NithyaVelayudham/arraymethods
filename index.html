@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods in JS</title>
+
+     <!--BSP_3 CSS Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!--BSP_4 CSS Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!--BSP_5 CSS Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--icon Links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+    <div class="container py-5 my-5 bg-dark bg-opacity-50">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="form text-center">
+<h1 class="display-2 fw-bold">JavaScript Array</h1>
+<!--array methods part-1-->
+<h2 class="fw-bold mt-5">Array Methods</h2>
+<div class="array mt-5 border p-5 bg-info">
+<!--first array-->
+<div class="row">
+    <label class="col-sm-4 label">Enter the Array Element&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+    <div class="col-md-8">
+<input type="text" class="form-control text-center" id="num1"
+placeholder="Enter the string">
+</div>
+</div>
+<p id="demo" class=" out pe-2 text-center my-5 bg-dark text-white"></p>
+<p id="d1" class=" out pe-2 text-center my-3 bg-dark text-white"></p>
+
+<!--buttons & dropdowns-->
+<div class="dropdown mt-5">
+<div class="row mt-5">
+    <div class="col-md-10">
+        <a class="btn btn-success dropdown-toggle text-center" 
+        data-toggle="dropdown" href="#">Option</a>
+<ul class="dropdown-menu bg-info">
+<li><a class="dropdown-item" onclick="arraytostring()" href="#">
+ToString</a></li>
+<li><a class="dropdown-item" onclick="pop()" href="#">
+    Pop</a></li>
+<li><a class="dropdown-item" onclick="shift()" href="#">
+    Shift</a></li>
+        </ul>
+</div>
+</div>
+</div> <!--dropdown-->
+
+</div>     <!--part 1-->          
+
+<!--array Methods part-2-->
+<h2 class="fw-bold mt-5">Array Methods</h2>
+<div class="text mt-5 border p-5 bg-info">
+<!--first array-->
+    <div class="row">
+        <label class="col-sm-2 label">Enter the Array Element&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        <div class="col-sm-10">
+<input type="text" class="form-control text-center" id="num2"
+placeholder="Enter the array">
+</div>
+    </div>
+  <!--second array-->  
+    <div class="row mt-5 justify-content-center ">
+       <label  class="col-md-4 l1 mt-4">Text&nbsp;-&nbsp;1 :</label>
+       <input type="text" class="col-md-4 input mt-3" id="a1"
+       placeholder="Enter the text" >
+</div>
+<p id="demo1" class=" out pe-2 text-center my-5 bg-dark text-white"></p>
+<p id="d2" class=" out pe-2 text-center my-3 bg-dark text-white"></p>
+
+<div class="dropdown mt-5 ">
+    <div class="row mt-5">
+        <div class="col-md-10">
+            <a class="btn btn-success dropdown-toggle text-center" 
+            data-toggle="dropdown" href="#">Option</a>
+    <ul class="dropdown-menu bg-info">
+    <li><a class="dropdown-item" onclick="join()" href="#">
+    JOin</a></li>
+    <li><a class="dropdown-item" onclick="push()" href="#">
+        Push</a></li>
+    <li><a class="dropdown-item" onclick="unshift()" href="#">
+        UnShift</a></li>
+        <li><a class="dropdown-item" onclick="concat()" href="#">
+            Concat</a></li>
+            <li><a class="dropdown-item" onclick="length()" href="#">
+Length</a></li>
+<li><a class="dropdown-item" onclick="Delete()" href="#">
+    Delete</a></li>
+          </ul>
+    </div>
+    </div>
+    </div><!--dropdown-->
+</div><!--part 2-->
+
+<!--array Methods part-3-->
+<h2 class="fw-bold mt-5">Array Methods slice</h2>
+<div class="text mt-5 border p-5 bg-info">
+<!--first array-->
+    <div class="row">
+        <label class="col-sm-2 label">Enter the Array Element&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        <div class="col-sm-10">
+<input type="text" class="form-control text-center" id="num3"
+placeholder="Enter the array">
+</div>
+    </div>
+    <!--start & Stop index-->
+    <div class="row mt-5 justify-content-center ">
+       <label  class="col-md-4 l1 mt-4">start&nbsp;&nbsp; :</label>
+       <input type="number" class="col-md-4 input mt-3" id="a2"
+       placeholder="Enter the num" >
+        <label  class="col-md-4 l1 mt-4">stop&nbsp;&nbsp;:</label>
+       <input type="number" class="col-md-4 input mt-3" id="a3"
+       placeholder="Enter the num" >
+</div>
+<p id="demo2" class=" out pe-2 text-center my-5 bg-dark text-white"></p>
+
+<button class="btn btn-success d-block mx-auto my-4 text-center" 
+onclick="slice()">Slice</button>
+</div><!--part-3-->
+
+<!--array Methods part-4-->
+<h2 class="fw-bold mt-5">Array Methods splice</h2>
+<div class="text mt-5 border p-5 bg-info">
+<!--first array-->
+    <div class="row">
+        <label class="col-sm-2 label">Enter the Array Element&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        <div class="col-sm-10">
+<input type="text" class="form-control text-center" id="num4"
+placeholder="Enter the array">
+</div>
+    </div>
+    <!--spliced array-->
+    <div class="row mt-5 justify-content-center ">
+       <label  class="col-md-4 l1 mt-4">Index&nbsp;&nbsp; :</label>
+       <input type="number" class="col-md-4 input mt-3" id="a4"
+       placeholder="Enter the num" >
+       <label  class="col-md-4 l1 mt-4">Remove&nbsp;&nbsp;:</label>
+       <input type="number" class="col-md-4 input mt-3" id="a5"
+       placeholder="Enter the num" >
+       <label  class="col-md-4 l1 mt-4">Element&nbsp;&nbsp;:</label>
+       <input type="text" class="col-md-4 input mt-3" id="a6"
+       placeholder="Enter the element" >
+</div>
+<p id="demo3" class=" out pe-2 text-center my-5 bg-dark text-white"></p>
+<p id="d3" class=" out pe-2 text-center my-5 bg-dark text-white"></p>
+<button class="btn btn-success d-block mx-auto my-4 text-center" 
+onclick="splice()">Splice</button>
+</div>
+</div><!--part-4-->
+
+
+
+</div></div></div></div>
+
+
+
+
+     <!--js link-->
+ <script src="script.js"></script>
+
+
+ <!--BSP_3 Js Script Links-->
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+     <!--BSP_4 Js Script Links-->
+     <!-- jQuery library -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+     <!-- Popper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <!--BSP_5 Js Script Links-->
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
